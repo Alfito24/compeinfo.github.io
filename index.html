@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page with Nav Menu</title>
+</head>
+<body>
+    <header>
+        <h1>My Logo</h1>
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li>Products</li>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+    <section class="home">
+        <section class="left">
+            <h2 class="title">Temukan berbagai <br> lomba di satu tempat</h2>
+            <!-- <p class="subtitle">Temukan berbagai lomba di satu tempat</p> -->
+            <button class="button">Learn More</button>
+        </section>
+        <section class="right">
+            <img class="image" src="./images/19197059-removebg-preview.png" alt="ilustration">
+        </section>
+    </section>
+   
+    <section class="fitur">
+        <h2 style="text-align: center; margin-top: 30px;">Our Features</h2>
+        <div class="feature">
+        <div class="container">
+           
+            <!-- <div class='banner-img'></div> -->
+            <img src='https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='profile image' class="profile-img">
+            <h1 class="name">Anna Marie</h1>
+            <p class="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
+            <button class='btn'>Follow</button>
+          </div>
+      
+          <div class="container">
+            
+            <img src='https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='profile image' class="profile-img">
+            <h1 class="name">Anna Marie</h1>
+            <p class="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
+            <button class='btn'>Follow</button>
+          </div>
+      
+          <div class="container">
+            
+            <img src='https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='profile image' class="profile-img">
+            <p class="name">Anna Marie</p>
+            <p class="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
+            <button class='btn'>Follow</button>
+          </div>
+        </div>
+    </section>
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+</body>
+</html>
