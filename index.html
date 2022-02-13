@@ -9,17 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Responsive Landing Page with Nav Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <title>Compeinfo</title>
 </head>
 <body>
     <header>
-        <h1>My Logo</h1>
+        <h1 class="logo"><a href="" class="logo">Compeinfo</a></h1>
         <section class="menu">
             <ul class="menu-list">
                 <li>Home</li>
                 <li>Products</li>
-                <li>About Us</li>
-                <li>Contact</li>
+                <li>
+                  <div class="dropdown">
+                    <span class="">About <i class="fa fa-angle-down"></i></span>
+                    <div class="dropdown-content">
+                    <a href="#">Latar Belakang</a>
+                    <a href="#">Nama Aplikasi</a>
+                    <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </li>
             </ul>
             <button>
                 <i class="fas fa-times"></i>
@@ -30,43 +42,92 @@
     <section class="home">
         <section class="left">
             <h2 class="title">Temukan berbagai <br> lomba di satu tempat</h2>
-            <!-- <p class="subtitle">Temukan berbagai lomba di satu tempat</p> -->
-            <button class="button">Learn More</button>
+            <p class="subtitle" style="margin-left: 105px;margin-bottom: 20px; font-size: 1.3rem; font-weight: 500;">Pilih lomba sesuai minat Anda dan jadilah pemenang</p>
+            <button class="button">Mulai Sekarang</button>
         </section>
         <section class="right">
             <img class="image" src="./images/19197059-removebg-preview.png" alt="ilustration">
         </section>
     </section>
-   
     <section class="fitur">
-        <h2 style="text-align: center; margin-top: 30px;">Our Features</h2>
+       <div class="circle">
+        <h2 class="section">Our Features</h2>
+       </div>
         <div class="feature">
-        <div class="container">
-           
-            <!-- <div class='banner-img'></div> -->
-            <img src='https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='profile image' class="profile-img">
-            <h1 class="name">Anna Marie</h1>
+        <div class="container ctn">
+            <img src='images/inter2.jpg' alt='profile image' class="profile-img">
+            <h1 class="name"><a href="index3.html">Internasional</a></h1>
             <p class="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
-            <button class='btn'>Follow</button>
           </div>
-      
-          <div class="container">
-            
-            <img src='https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='profile image' class="profile-img">
-            <h1 class="name">Anna Marie</h1>
+          <div class="container ctn">
+            <img src='images/national.jpg' alt='profile image' class="profile-img">
+            <h1 class="name">Nasional</h1>
             <p class="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
-            <button class='btn'>Follow</button>
           </div>
-      
-          <div class="container">
-            
-            <img src='https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='profile image' class="profile-img">
-            <p class="name">Anna Marie</p>
+          <div class="container ctn">
+            <img src="images/region.jpg" alt='profile image' class="profile-img">
+            <p class="name">Regional</p>
             <p class="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
-            <button class='btn'>Follow</button>
           </div>
         </div>
     </section>
+    <div class="three" style="background: rgb(1,105,255);
+    background: linear-gradient(90deg, rgba(1,105,255,1) 0%, rgba(16,103,244,1) 34%, rgba(20,113,241,1) 55%, rgba(98,164,235,1) 100%);">
+        <div class="grid-container">
+          <div class="item1" style="text-align: justify;">
+            <h2 style="text-align: center; margin-bottom: 25px; color: white;">Background</h2>
+           <p style="font-size: 1.3rem;">
+            Berdasarkan hasil statistik ketertarikan mahasiswa mengikuti lomba (statistik dapat ditemukan di halaman lampiran), 77.4% dari populasi mahasiswa memiliki ketertarikan untuk mengikuti lomba. 66.7% dari mahasiswa mahasiswa tersebut menyatakan kesulitan mencari lomba yang tersedia. 93.8% dari yang kesulitan tersebut menyatakan bahwa ketersediaan informasi-informasi lomba masih sulit ditemukan. 50% dari populasi yang menyatakan sulit mencari lomba menyatakan pula sulit mencari lomba untuk regional masing-masing.
+           </p>
+          </div>
+          <div class="item2">
+            <img style="width: 600px;" src="images/rocket-removebg-preview.png" alt="">
+          </div>
+        </div>
+     
+    </div>
+    <section class="upcoming">
+      <div class="circle1">
+        <h2 class="section">Our Team</h2>
+      </div>
+      <div class="comingsoon">
+        <div class="container ctn1">
+            <img style="height: 400px;" src='images/linda-removebg-preview.png' alt='profile image' class="profile-img1">
+            <h1 class="name">Amalinda Jayanty</h1>
+            <p class="description">Programmer</p>
+        </div>
+        <div class="container ctn1">
+            <img style="height: 400px;" src='images/alfito-removebg-preview.png' alt='profile image' class="profile-img1">
+            <h1 class="name">Alfito Khansa Nugraha</h1>
+            <p class="description">Programmer</p>
+          </div>
+          <div class="container ctn1">
+            <img style="height: 400px;" src='images/jihaan-removebg-preview.png' alt='profile image' class="profile-img1">
+            <h1 class="name">Jihaan Harvi Habibah</h1>
+            <p class="description">Programmer</p>
+          </div>
+      </div>
+    </section>
+    <footer >
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icon">
+        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+        <li><a href=""><i class="fa fa-github"></i></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+      <p> &copy; 2022 COMPEINFO | All Right Reserved</p>
+		</footer>
     <script>
         var menu = document.querySelector('.menu');
         var menuBtn = document.querySelector('.menu button');
@@ -74,5 +135,22 @@
             menu.classList.toggle('opened')
         })
     </script>
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
 </body>
 </html>
