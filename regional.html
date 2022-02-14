@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPEINFO | International</title>
+    <link rel="icon" href="images/rocket-removebg-preview.png"> 
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href="index.html" class="logo">Compeinfo</a></h1>
+        <section class="menu">
+            <ul class="menu-list">
+                <li><a href="#home" style="text-decoration: none;">Home</a></li>
+                <li>
+                  <div class="dropdown">
+                    <span class="">Features <i class="fa fa-angle-down"></i></span>
+                    <div class="dropdown-content">
+                    <a href="international.html">Internasional</a>
+                    <a href="national.html">Nasional</a>
+                    <a href="regional.html">Regional</a>
+
+                    </div>
+                  </div>
+                </li>
+            </ul>
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+    <section class="info" style=" margin-top: 100px;">
+        <div class="circle" style="width: 400px;">
+            <h2 class="section">Event Regional</h2>
+           </div>
+      </section>
+      <section class="cards-wrapper" style="margin-bottom: 100px;">
+        <div class="card-grid-space">
+          <div class="num">01</div>
+          <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(images/lomba2.jpg)">
+            <div>
+              <h1>ELECTRICAL AND COMPUTER COMPETITION </h1>
+              <!-- <p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p> -->
+              <div class="date">6 Mar 2022</div>
+              <div class="tags">
+              
+                <div class="tag">Register</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card-grid-space">
+          <div class="num">02</div>
+          <a class="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('images/lomba1.jpg')">
+            <div>
+              <h1>INVESTMENT SUMMIT PROJECT 2022</h1>
+              <div class="date">9 Mar 2022</div>
+              <div class="tags">
+               
+                <div class="tag">Register</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card-grid-space">
+          <div class="num">03</div>
+          <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('images/lomba3.jpg')">
+            <div>
+              <h1>FRONT-END WEB DEVELOPMENT COMPETITION 2022</h1>
+              <div class="date">17 Feb 2022</div>
+              <div class="tags">
+               
+                <div class="tag">Register</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+      </section>
+      <footer >
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+          <li><a href=""><i class="fa fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+          <li><a href=""><i class="fa fa-github"></i></a></li>
+        </ul>
+        <ul class="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+        <p> &copy; 2022 COMPEINFO | All Right Reserved</p>
+          </footer>
+      <script>
+          var menu = document.querySelector('.menu');
+          var menuBtn = document.querySelector('.menu button');
+          menuBtn.addEventListener('click', () => {
+              menu.classList.toggle('opened')
+          })
+      </script>
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+</body>
+</html>

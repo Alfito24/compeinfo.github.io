@@ -17,19 +17,20 @@
     <title>Compeinfo</title>
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i style="font-size: 1.7em;" class="fa fa-angle-up"></i></button>
     <header>
         <h1 class="logo"><a href="" class="logo">Compeinfo</a></h1>
         <section class="menu">
             <ul class="menu-list">
-                <li>Home</li>
-                <li>Products</li>
+                <li><a href="#home" style="text-decoration: none;">Home</a></li>
+                <li><a href="#features" style="text-decoration: none;">Features</a></li>
                 <li>
                   <div class="dropdown">
                     <span class="">About <i class="fa fa-angle-down"></i></span>
                     <div class="dropdown-content">
-                    <a href="#">Latar Belakang</a>
-                    <a href="#">Nama Aplikasi</a>
-                    <a href="#">Link 3</a>
+                    <a href="#background">Background</a>
+                    <a href="#team">Our Team</a>
+
                     </div>
                   </div>
                 </li>
@@ -40,7 +41,7 @@
             </button>
         </section>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <section class="left">
             <h2 class="title">Temukan berbagai <br> lomba di satu tempat</h2>
             <p class="subtitle" style="margin-left: 105px;margin-bottom: 20px; font-size: 1.3rem; font-weight: 500;">Pilih lomba sesuai minat Anda dan jadilah pemenang</p>
@@ -50,35 +51,35 @@
             <img class="image" src="./images/19197059-removebg-preview.png" alt="ilustration">
         </section>
     </section>
-    <section class="fitur">
+    <section class="fitur" id="features">
        <div class="circle">
         <h2 class="section">Our Features</h2>
        </div>
         <div class="feature">
         <div class="container ctn">
             <img src='images/inter2.jpg' alt='profile image' class="profile-img">
-            <h1 class="name"><a href="index3.html">Internasional</a></h1>
+            <h1 class="name"><a href="international.html" style="text-decoration: none;">Internasional</a></h1>
             <p class="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
           </div>
           <div class="container ctn">
             <img src='images/national.jpg' alt='profile image' class="profile-img">
-            <h1 class="name">Nasional</h1>
+            <h1 class="name"><a href="national.html" style="text-decoration: none;">Nasional</a></h1>
             <p class="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
           </div>
           <div class="container ctn">
             <img src="images/region.jpg" alt='profile image' class="profile-img">
-            <p class="name">Regional</p>
+            <p class="name"><a href="regional.html" style="text-decoration: none;">Regional</a></p>
             <p class="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
           </div>
         </div>
     </section>
     <div class="three" style="background: rgb(1,105,255);
-    background: linear-gradient(90deg, rgba(1,105,255,1) 0%, rgba(16,103,244,1) 34%, rgba(20,113,241,1) 55%, rgba(98,164,235,1) 100%);">
+    background: linear-gradient(90deg, rgba(1,105,255,1) 0%, rgba(16,103,244,1) 34%, rgba(20,113,241,1) 55%, rgba(98,164,235,1) 100%);" id="background">
         <div class="grid-container">
           <div class="item1" style="text-align: justify;">
             <h2 style="text-align: center; margin-bottom: 25px; color: white;">Background</h2>
            <p style="font-size: 1.3rem;">
-            Berdasarkan hasil statistik ketertarikan mahasiswa mengikuti lomba (statistik dapat ditemukan di halaman lampiran), 77.4% dari populasi mahasiswa memiliki ketertarikan untuk mengikuti lomba. 66.7% dari mahasiswa mahasiswa tersebut menyatakan kesulitan mencari lomba yang tersedia. 93.8% dari yang kesulitan tersebut menyatakan bahwa ketersediaan informasi-informasi lomba masih sulit ditemukan. 50% dari populasi yang menyatakan sulit mencari lomba menyatakan pula sulit mencari lomba untuk regional masing-masing.
+            Berdasarkan hasil statistik ketertarikan mahasiswa mengikuti lomba, 77.4% dari populasi mahasiswa memiliki ketertarikan untuk mengikuti lomba. 66.7% dari mahasiswa mahasiswa tersebut menyatakan kesulitan mencari lomba yang tersedia. 93.8% dari yang kesulitan tersebut menyatakan bahwa ketersediaan informasi-informasi lomba masih sulit ditemukan. 50% dari populasi yang menyatakan sulit mencari lomba menyatakan pula sulit mencari lomba untuk regional masing-masing.
            </p>
           </div>
           <div class="item2">
@@ -87,7 +88,7 @@
         </div>
      
     </div>
-    <section class="upcoming">
+    <section class="upcoming" id="team">
       <div class="circle1">
         <h2 class="section">Our Team</h2>
       </div>
@@ -153,5 +154,26 @@
         }
       }
       </script>
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 </html>
